@@ -262,7 +262,7 @@ var spy = new Gumshoe('#navigation a', {
 
 /* ======= Countdown ========= */
 // set the date we're counting down to
-var target_date = new Date("Feb 19, 2024").getTime();
+var target_date = new Date("Aug 25, 2024").getTime();
 
 // variables for time units
 var days, hours, minutes, seconds;
@@ -288,7 +288,10 @@ setInterval(function () {
     // find the amount of "seconds" between now and target
     var current_date = new Date().getTime();
     var seconds_left = (target_date - current_date) / 1000;
-
+	
+	if (seconds_left < 0) {
+        seconds_left = 0; // Stop the countdown at zero
+    }
     // do some time calculations
     days = parseInt(seconds_left / 86400);
     seconds_left = seconds_left % 86400;
@@ -298,6 +301,8 @@ setInterval(function () {
 
     minutes = parseInt(seconds_left / 60);
     seconds = parseInt(seconds_left % 60);
+
+	
 
     // format countdown string + set tag value.
     days_span.innerHTML = '<span class="number">' + days + '</span>' + '<span class="unit">Days</span>';
