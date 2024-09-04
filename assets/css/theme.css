@@ -381,12 +381,14 @@ table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > 
 }
 
 .fa-facebook {
-	background: #3B5998;
+	background-color: #3b5998;
+	border-radius: 50%;
 	color: white;
 }
 
 .fa-twitter {
-	background: #55ACEE;
+	background-color: #1da1f2;
+	border-radius: 50%;
 	color: white;
 }
 
@@ -396,7 +398,8 @@ table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > 
 }
 
 .fa-instagram {
-	background: #125688;
+	background: #e1306c;
+	border-radius: 50%;
 	color: white;
 }
 
