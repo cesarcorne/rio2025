@@ -430,3 +430,13 @@ td, th {
 tr:nth-child(even) {
 	background-color: #dddddd;
 }
+
+/* Clase personalizada para estandarizar los logos de los sponsors */
+.sponsor-logo {
+    max-height: 100px; /* Altura máxima estándar para la mayoría de los logos */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+    display: block;
+}
+
+/* Clase adicional para agrandar el logo de Dialpad */
