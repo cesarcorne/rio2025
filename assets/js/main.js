@@ -154,7 +154,9 @@ $('.selectpicker').change(function () {
 // function toggleCourse(id) {
 // 	$(`.school ul.courses li div#${id}`).toggle();
 // }
-
+	function toggleBio(id){
+		$(`.school ul.courses li div#${id}`).toggle();
+	}
 	function toggleCourse(id) {
 	$(`.school ul.courses li div#${id}`).toggle();
 }
