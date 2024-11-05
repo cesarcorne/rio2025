@@ -43,6 +43,15 @@
 						<li class="nav-item"><a class="nav-link scrollto" href="#courses">Courses</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#schedule-section">Schedule</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#registration-section">Registration</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="grantsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Grants
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="grantsDropdown">
+								<li><a class="dropdown-item scrollto" href="#student-grants-section">Student Registration Grants</a></li>
+								<li><a class="dropdown-item scrollto" href="#travel-grants-section">Travel Grants</a></li>
+							</ul>
+						</li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#venue-section">Venue</a></li>
 						<li class="nav-item"><a class="nav-link scrollto" href="#sponsors-section">Sponsors</a></li>
 						<li class="nav-item"><a class="nav-link" target="_blank" href="https://rio2024.dc.exa.unrc.edu.ar/">Previous Rio</a></li>
@@ -177,7 +186,7 @@
                 <h3>Course 1</h3>
                 <h3><a href="#" onclick="toggleCourse('curso1'); return false;">Introduction to Input Grammar Fuzzing</a></h3>
 				<h4><a href="#" style="color: black" onclick="toggleBio('short-bio1'); return false;">Andreas Zeller</a></h4>
-                <h5><i class="fa fa-map-marker"></i> TBD</h5>
+                <h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio1" class="description">
 					<strong>
 						Andreas Zeller is faculty at the CISPA Helmholtz
@@ -223,7 +232,7 @@
                 <h3>Course 2</h3>
                 <h3><a href="#" onclick="toggleCourse('curso2'); return false;">Advances in Automatic Software Testing</a></h3>
 				<h4><a href="#" style="color: black" onclick="toggleBio('short-bio2'); return false;">Mike Papadakis</a></h4>
-                <h5><i class="fa fa-map-marker"></i> TBD</h5>
+                <h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio2" class="description">
 					<strong>
 						Mike Papadakis is an Associate Professor at the University of Luxembourg where he
@@ -252,7 +261,7 @@
                 <h3>Course 3</h3>
                 <h3><a href="#" onclick="toggleCourse('curso3'); return false;">Program Verification with Isabelle/HOL</a></h3>
 				<h4><a href="#" style="color: black" onclick="toggleBio('short-bio3'); return false;">Peter Lammich</a></h4>
-                <h5><i class="fa fa-map-marker"></i>TBD</h5>
+                <h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio3" class="description">
 					<strong>
 						Peter Lammich is an expert in interactive theorem proving and software verification. He works with the Isabelle proof assistant. He has developed the Isabelle Refinement Framework, that enables a stepwise refinement based approach to verification of efficient software. He has applied the refinement framework to formally verify practically efficient software, including model checkers, SAT solvers and UNSAT certifiers, graph algorithms, and (parallel) sorting algorithms. A key focus of his research is to improve scalability of verification techniques, to both more complex software and more efficient implementations. After his PhD at WWU Münster, he has worked at TU Munich, Virginia Tech, the University of Manchester, and is now assistant professor in the Formal Methods and Tools group at the University of Twente.
@@ -288,7 +297,7 @@
 					<a href="#" style="color: black" onclick="toggleBio('short-bio4-1'); return false;">Santiago Arranz Olmos</a>, 
 					<a href="#" style="color: black" onclick="toggleBio('short-bio4-2'); return false;">Gilles Barthe</a>
 				</h4>
-				<h5><i class="fa fa-map-marker"></i>TBD</h5>
+				<h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio4-1" class="description">
 					<strong>
 						Santiago Arranz Olmos is a PhD student at the Max Planck Institute for Security and
@@ -331,7 +340,7 @@
                 <h3>Course 5</h3>
                 <h3><a href="#" onclick="toggleCourse('curso5'); return false;">Introducción a la Teoría de la Computabilidad</a></h3>
 				<h4><a href="#" style="color: black" onclick="toggleBio('short-bio5'); return false;">Santiago Figueira</a></h4>
-                <h5><i class="fa fa-map-marker"></i>TBD</h5>
+                <h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio5" class="description">
 					<strong>
 						Santiago Figueira es profesor en el Departamento de Computación de la Facultad de Ciencias Exactas y Naturales de la Universidad de Buenos Aires e investigador de CONICET. Empezó su carrera científica estudiando nociones de aletoriedad algorítmica y su relación con la computabilidad. Luego se acercó a las lógicas computacionales y a la teoría de las bases de datos. Más recientemente, participó de investigaciones que conectan la computabilidad con la información cuántica por un lado, y la teoría de largo de programa con algunos problemas de cognición humana. Es director del Grupo de Lógica y Computabilidad del Instituto de Ciencias de la Computación y a lo largo de los años tuvo varios cargos de gestión en su Facultad.
@@ -348,7 +357,7 @@
                 <h3>Course 6</h3>
                 <h3><a href="#" onclick="toggleCourse('curso6'); return false;">Analysis of mobile apps for quality and trustworthiness</a></h3>
 				<h4><a href="#" style="color: black" onclick="toggleBio('short-bio6'); return false;">Alessandra Gorla</a></h4>
-                <h5><i class="fa fa-map-marker"></i>TBD</h5>
+                <h5><i class="fa fa-map-marker"></i></h5>
 				<div id="short-bio6" class="description">
 					<strong>
 						Alessandra Gorla is Associate Research Professor at the IMDEA Software Institute in Madrid, Spain. She completed her
@@ -372,7 +381,7 @@
         </ul>
     </div>
 
-	<h3 class="section-heading text-center mb-5">Invited Speakers</h3>
+	<!-- <h3 class="section-heading text-center mb-5">Invited Speakers</h3>
 
 	<div class="container">
 		<ul class="courses">
@@ -429,7 +438,7 @@
 				</div>
 			</li>
 		</ul>
-	</div>
+	</div> -->
 	
 
 	<section id="schedule-section" class="schedule-section section">
@@ -677,7 +686,6 @@
 		</div>
 	</section><!--//schedule-section-->
 	<!--<p align="center">The cost per person for the "choripaneada" event is TBD, to be paid to the volunteer assistants.</p>-->
-
 	<section id="registration-section" class="tickets-section section theme-bg-light">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Registration</h3>
@@ -686,11 +694,7 @@
 				<p>The fees for the courses depend on the attendant's category and number of courses to take.</p>
 				<p>The registration categories and their corresponding fees are the following:</p>
 			</div><!-- /.container -->
-	
 			<br>
-			<br>
-			<br>
-	
 			<center>
 				<table>
 					<tbody>
@@ -721,10 +725,8 @@
 					</tbody>
 				</table>
 			</center>
-	
 			<br>
 			<br>
-	
 			<div align="left">
 				<p><strong>Students from UNRC can take any number of courses free of charge, provided they register before February 10, 2025.</strong> Fees in the above table apply for late registration, in the case of UNRC students. Please notice that registration implies a commitment to take the corresponding courses. In case a student is registered but cannot take the courses he/she registered in, please notify the organization as soon as possible, to allow for other students to register. UNRC graduates can register in the category for "Students, professors and researchers from Latin American institutions".</p>
 	
@@ -733,48 +735,56 @@
 				<p style="display:inline">To register you must complete the following</p>
 				<a href="javascript:void(0);" style="cursor: pointer;"><strong><font size="3"> Registration Form</font></strong></a>.<br><br></p>
 			</div>
-			<div>
-				<h3 class="section-heading text-center mb-3">Student Registration Grants</h3>
-				<p>The Argentinian Summer School on Informatics RIO will offer registration grants for students. Beneficiaries of these grants may attend all courses free of charge.</p>
-			
-				<strong><p>The requirements to apply for a student registration grant are the following:</p></strong>
-				<p>
-					<li> Be enrolled in an undergraduate or graduate program at a public University, since least 6 months before the starting date of the school. </li>
-				</p>
-			
-				<p style="display:inline">To apply for a student registration grant, please fill in the following</p>
-				<a href="javascript:void(0);" style="cursor: pointer;"><strong><font size="3"> Student Registration Grant Application Form</font></strong></a>.<br><br></p>
-				<strong>
-					<p>In addition to filling in the application form, applicants must send a certificate of enrollment in the corresponding academic program, by email, to riobecas@dc.exa.unrc.edu.ar<br><br></p>
-				</strong>
-			
-				<strong>
-					<p>Deadline to apply for student registration grants: February 10, 2025</p>
-				</strong>
-			
-				<h3 class="section-heading text-center mb-3">Travel Grants</h3>
-				<p>The Argentinian Summer School on Informatics RIO is happy to announce the availability of grants to partially cover travel and accommodation expenses. These grants are made possible thanks to ACM and AWS, and our sponsors and supporters in general. Grant availability will be limited, and will cover from USD200 up to USD400, to support the participation in our School. We welcome applications from undergraduate students, graduate students, researchers and academics in general. Applications will be judged based on the qualifications of the applicants, and the geographical distance from the applicants' place of origin to the location of our School. We will prioritize advanced students and young academics from public institutions, from more distant locations.</p> 
+		</div>
+		</section><!--//tickets-section-->
 
-                <p>To apply for a travel grant, please fill in the following</p> 
-				<a href="javascript:void(0);" style="cursor: pointer;"><strong><font size="3"> Travel Grant Application Form</font></strong></a>.<br><br></p>
+		<section id="student-grants-section" class="section ">
+			<div class="container">
+				<h3 class="section-heading text-center mb-3">Student Registration Grants</h3>
+					<p>The Argentinian Summer School on Informatics RIO will offer registration grants for students. Beneficiaries of these grants may attend all courses free of charge.</p>
+
+					<strong><p>The requirements to apply for a student registration grant are the following:</p></strong>
+					<ul>
+						<li> Be enrolled in an undergraduate or graduate program at a public University, since least 6 months before the starting date of the school. </li>
+					</ul>
+
+					<p style="display:inline">To apply for a student registration grant, please fill in the following</p>
+					<a href="javascript:void(0);" style="cursor: pointer;"><strong><font size="3"> Student Registration Grant Application Form</font></strong></a></p>
+					<strong>
+						<p>In addition to filling in the application form, applicants must send a certificate of enrollment in the corresponding academic program, by email, to riobecas@dc.exa.unrc.edu.ar<br><br></p>
+					</strong>
+
+					<strong>
+						<p>Deadline to apply for student registration grants: February 10, 2025</p>
+					</strong>
+			</div>
+		</section>
+
+		<section id="travel-grants-section" class="grants-section section theme-bg-light">
+			<div class="container">
+				<h3 class="section-heading text-center mb-3">Travel Grants</h3>
+				<p>The Argentinian Summer School on Informatics RIO is happy to announce the availability of grants to partially
+					cover travel and accommodation expenses. These grants are made possible thanks to ACM and AWS, and our
+					sponsors and supporters in general. Grant availability will be limited, and will cover from USD200 up to
+					USD400, to support the participation in our School. We welcome applications from undergraduate students,
+					graduate students, researchers and academics in general. Applications will be judged based on the
+					qualifications of the applicants, and the geographical distance from the applicants' place of origin to the
+					location of our School. We will prioritize advanced students and young academics from public institutions,
+					from more distant locations.</p>
+
+				<p>To apply for a travel grant, please fill in the following</p>
+				<a href="javascript:void(0);" style="cursor: pointer;"><strong>
+						<font size="3"> Travel Grant Application Form</font>
+					</strong></a>.<br><br></p>
 				<strong>
 					<p>Deadline to apply for travel grants: February 10, 2025</p>
 				</strong>
 			</div>
-			
-
 		</section>
-
-
-
-		<div class="break"></div>
-	  </div>
-		  </div><!--//container-->
-	  </section><!--//tickets-section-->
 
 	  <div class="media-block py-5">
 		<div class="container">
-			<h3 class="section-heading text-center mb-5">Organizers</h3>
+			<h3 class="section-heading text-center mb-4">Organizers</h3>
 			
 			<div class="section single-col-max mx-auto mb-4 col-md-6" align="justify">
 				<div>
@@ -901,16 +911,15 @@
 	
 				<!-- Social Media Links -->
 				<div class="col-md-6 text-end">
-
-						<a href="https://www.facebook.com/EscuelaDeVeranoRio/" class="me-3">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a href="https://twitter.com/escuelaRio?ref_src=twsrc%5Etfw" class="me-3">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a href="https://www.instagram.com/escuelario/" class="me-3">
-							<i class="fa fa-instagram"></i> 
-						</a>
+				<a href="https://www.facebook.com/EscuelaDeVeranoRio/" class="me-3" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="https://twitter.com/escuelaRio?ref_src=twsrc%5Etfw" class="me-3" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://www.instagram.com/escuelario/" class="me-3" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a> 
 				</div><!-- /.col-md-6 -->
 			</div><!-- /.row -->
 	
