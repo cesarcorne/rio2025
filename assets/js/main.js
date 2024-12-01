@@ -151,20 +151,25 @@ $('.selectpicker').change(function () {
 });
 
 
-// function toggleCourse(id) {
-// 	$(`.school ul.courses li div#${id}`).toggle();
-// }
-	function toggleBio(id){
-		$(`.school ul.courses li div#${id}`).toggle();
-	}
-	function toggleCourse(id) {
-	$(`.school ul.courses li div#${id}`).toggle();
+function toggleContent(id) {
+    const $currentElement = $(`.school ul.courses li div#${id}`);
+    $('.school ul.courses li div.description').not($currentElement).hide();
+    $currentElement.toggle();
 }
 
-	function toggleSpeakers(id) {
+/*
+function toggleBio(id){
+		$(`.school ul.courses li div#${id}`).toggle();
+	}
+function toggleCourse(id) {
+	$(`.school ul.courses li div#${id}`).toggle();
+}*/
+
+function toggleSpeakers(id) {
 	$(`.school ul.courses li div div#${id}`).toggle();
 }
-	function toggleSpeakers(id) {
+
+function toggleSpeakers(id) {
 	$(`.school ul.courses li div#${id}`).toggle();
 }
 //
@@ -205,8 +210,10 @@ window.onscroll=function()
 function headerAnimation () {
 
     var scrollTop = window.scrollY;
+	const screenWidth = window.innerWidth;
+    const mobileWidth = 768;
 
-	if ( scrollTop > 100 ) {
+	if ( scrollTop > 100 || screenWidth <= mobileWidth) {
 	    header.classList.add('header-shrink');
 
 	} else {
