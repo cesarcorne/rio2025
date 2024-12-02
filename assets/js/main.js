@@ -186,7 +186,6 @@ function toggleSpeakers(id) {
 
 
 /* ======= Header animation ======= */
-const header = document.getElementById('header');
 
 window.onload=function()
 {
@@ -206,21 +205,27 @@ window.onscroll=function()
 
 };
 
+function headerAnimation() {
+	const header = document.getElementById('header');
+    const scrollTop = window.scrollY;
+	
+    if (scrollTop > 100) {
+        header.classList.add('header-shrink');
+    } else {
+        header.classList.remove('header-shrink');
+    }
+}
 
-function headerAnimation () {
+function toggleAnimation(){
+	const navbarToggler = document.querySelector('.navbar-toggler');
+	const isExpanded = navbarToggler.getAttribute('aria-expanded') === "true";
 
-    var scrollTop = window.scrollY;
-	const screenWidth = window.innerWidth;
-    const mobileWidth = 768;
-
-	if ( scrollTop > 100 || screenWidth <= mobileWidth) {
-	    header.classList.add('header-shrink');
-
-	} else {
-	    header.classList.remove('header-shrink');
+	if(isExpanded){
+		header.classList.add('header-shrink');
+	}else{
+		header.classList.remove('header-shrink');
 	}
-
-};
+}
 
 /* ===== Smooth scrolling ====== */
 /*  Note: You need to include smoothscroll.min.js (smooth scroll behavior polyfill) on the page to cover some browsers */
