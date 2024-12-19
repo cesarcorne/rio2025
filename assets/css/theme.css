@@ -449,9 +449,12 @@ tr:nth-child(even) {
 
 	#sponsors img {
         margin: 0 auto !important;
-        max-width: 70% !important;
         height: auto !important;
     }
+
+	#supporters img {
+		padding: 0 !important;
+	}
 
 	.description {
 		max-height: 300px;
